@@ -1,5 +1,21 @@
 .spotlight-post {
- & .wp-block-post-content .wp-block-post-featured-image {
+  position: relative;
+
+  &::before {
+    content: 'To change the spolight post, enter a post title in the block settings on the right under "Filters -> Keyword".';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    color: #FFF;
+    font-family: monospace;
+    font-size: var(--wp--preset--font-size--caption);
+    padding: 0.25rem 0.5rem !important;
+    text-transform: none !important;
+    z-index: 1;
+  }
+ 
+  & .wp-block-post-content .wp-block-post-featured-image {
   display: none;
  }
 }
