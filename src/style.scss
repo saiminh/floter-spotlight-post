@@ -53,4 +53,7 @@
     font-size: var(--wp--preset--font-size--body-m);
     margin-bottom: 1.5em;
   }
+  & .entry-content .wp-block-post-featured-image {
+    display: none;
+  }
 }
